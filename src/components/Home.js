@@ -1,17 +1,25 @@
-const Home = () => {
-  const handleClick = () => {
-    console.log('Hello ninjas!');
-  };
+import { useState, useEffect } from 'react';
+import BlogList from './BlogList';
 
-  const handleClickAgain = (name) => {
-    console.log('Hello ' + name);
-  };
+const Home = () => {
+  const [blogs, setBlogs] = useState(null);
+  const [isPending, setIsPending] = useState(true);
+
+  useEffect(() => {
+    fetch('http://localhost:8000/blogs')
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setBlogs(data);
+        setIsPending(false);
+      });
+  }, []);
 
   return (
     <div className='home'>
-      <h2>Home Page</h2>
-      <button onClick={handleClick}>Click me!</button>
-      <button onClick={() => handleClickAgain('Mario')}>Click me too!</button>
+      {isPending && <div>Loading...</div>}
+      {blogs && <BlogList blogs={blogs} title='All Blogs' />}
     </div>
   );
 };
