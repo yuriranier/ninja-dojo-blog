@@ -1,7 +1,9 @@
 .create {
-    max-width: 400px;
-    margin: 0 auto;
     text-align: center;
+    & form {
+      margin: 0 auto;
+      max-width: 400px;
+    }
     & label {
         text-align: left;
         display: block;
@@ -20,11 +22,27 @@
         display: block;
       }
     & button {
-        background: #f1356d;
+        background: #a7224a;
         color: #fff;
         border: 0;
         padding: 8px;
         border-radius: 8px;
         cursor: pointer;
+        &:hover {
+          background: #f1356d;
+        }
       }
+  }
+
+  // Preview
+
+  .preview {
+    margin-top: 30px;
+    & h4 {
+      text-align: center;
+    }
+    & h2, & p {
+      text-align: left;
+      margin-bottom: 10px;
+    }
   }

@@ -63,6 +63,7 @@ a {
 .navbar a {
   margin-left: 16px;
   padding: 6px;
+  color: #a7224a;
 }
 .navbar a:hover {
   color: #f1356d;
@@ -77,14 +78,15 @@ a {
 .blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
+  border: 4px solid transparent;
   border-bottom: 2px solid #fafafa;
 }
-.blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+.blog-preview :hover > h2 {
+  color: #f1356d;
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #a7224a;
   margin-bottom: 8px;
 }
 
@@ -106,9 +108,11 @@ a {
 }
 
 .create {
-  max-width: 400px;
-  margin: 0 auto;
   text-align: center;
+}
+.create form {
+  margin: 0 auto;
+  max-width: 400px;
 }
 .create label {
   text-align: left;
@@ -128,10 +132,34 @@ a {
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: #a7224a;
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+.create button:hover {
+  background: #f1356d;
+}
+
+.preview {
+  margin-top: 30px;
+}
+.preview h4 {
+  text-align: center;
+}
+.preview h2, .preview p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.not-found p {
+  margin: 20px 0;
+}
+.not-found a {
+  color: #a7224a;
+}
+.not-found a:hover {
+  color: #f1356d;
 }/*# sourceMappingURL=main.css.map */

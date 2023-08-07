@@ -1,0 +1,15 @@
+.not-found {
+    & p {
+        margin: 20px 0;
+    }
+    & a {
+        color: #a7224a;
+        &:hover {
+            color: #f1356d;
+          }
+    }
+    
+    
+    
+    
+}
