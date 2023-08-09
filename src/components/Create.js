@@ -29,8 +29,8 @@ const Create = () => {
           <option value='' disabled defaultValue>
             Select an author
           </option>
-          <option value='mario'>mario</option>
-          <option value='yoshi'>yoshi</option>
+          <option value='mario'>Mario</option>
+          <option value='yoshi'>Yoshi</option>
         </select>
         <label>Blog Body:</label>
         <textarea required value={body} onChange={(e) => setBody(e.target.value)}></textarea>
