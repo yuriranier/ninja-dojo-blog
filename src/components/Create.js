@@ -15,7 +15,7 @@ const Create = () => {
     fetch('http://localhost:8000/blogs', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(blog) }).then(() => {
       console.log('blog added!');
       setIsPending(false);
-      history.push('/');
+      history.push('/ninja-dojo-blog/');
     });
   };
   return (

@@ -4,7 +4,7 @@ const NotFound = () => {
     <div className='not-found'>
       <h2>Sorry :(</h2>
       <p>The page you are looking for was not found.</p>
-      <Link to='/'>Back to the Home Page</Link>
+      <Link to='/ninja-dojo-blog/'>Back to the Home Page</Link>
     </div>
   );
 };
