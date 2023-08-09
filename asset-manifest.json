@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ninja-dojo-blog/static/css/main.d573201a.css",
-    "main.js": "/ninja-dojo-blog/static/js/main.c426a0cd.js",
+    "main.js": "/ninja-dojo-blog/static/js/main.e61084fa.js",
     "index.html": "/ninja-dojo-blog/index.html",
     "main.d573201a.css.map": "/ninja-dojo-blog/static/css/main.d573201a.css.map",
-    "main.c426a0cd.js.map": "/ninja-dojo-blog/static/js/main.c426a0cd.js.map"
+    "main.e61084fa.js.map": "/ninja-dojo-blog/static/js/main.e61084fa.js.map"
   },
   "entrypoints": [
     "static/css/main.d573201a.css",
-    "static/js/main.c426a0cd.js"
+    "static/js/main.e61084fa.js"
   ]
 }
